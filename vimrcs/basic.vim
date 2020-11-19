@@ -37,6 +37,12 @@ set history=500
 filetype plugin on
 filetype indent on
 
+set number
+set runtimepath+=~/.vim_runtime
+set whichwrap+=<,>,[,]
+autocmd BufRead,BufNewFile * start
+
+
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
